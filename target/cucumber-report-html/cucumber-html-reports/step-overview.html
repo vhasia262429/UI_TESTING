@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html>
+<head>
+  
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.tablesorter.min.js"></script>
+<script type="text/javascript" src="js/Chart.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css" type="text/css"/>
+<link rel="stylesheet" href="css/reporting.css" type="text/css"/>
+<link rel="stylesheet" href="css/font-awesome.min.css"/>
+<link rel="shortcut icon" href="images/favicon.png"/>
+
+<script type="text/javascript">
+$(document).ready(function() {
+    // this will tell tablesorter to try looking for the data-value attribute
+    // if present, it'll sort by that instead
+    // otherwise, it'll sort by the text content of the table cell
+    $("#tablesorter").tablesorter({
+        textAttribute: 'data-value',
+        // ignores the first row of the header, the 'scenario', 'steps', since
+        // sorting those doesn't make sense
+        selectorHeaders: '> thead tr:not(.dont-sort) th',
+        // use a stable sort
+        sortStable: true
+    });
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+  
+<title>Cucumber-JVM Reports  - Steps Overview</title>
+
+</head>
+<body>
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navigation">
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <p class="navbar-text navbar-left">Cucumber-JVM Report</p>
+      <ul class="nav navbar-nav navbar-right">
+                <li role="presentation" ><a href="feature-overview.html">Features</a></li>
+        <li role="presentation" ><a href="tag-overview.html">Tags</a></li>
+        <li role="presentation"     class="active" ><a href="step-overview.html">Steps</a></li>
+        <li role="presentation" ><a href="failures-overview.html">Failures</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid" id="build-info">
+  <div class="row">
+    <div class="col-md-6 col-md-offset-1">
+      <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Project</th>
+                          <th>Number</th>
+                        <th>Date</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="info">
+            <td>UI_TESTING_DATACOM</td>
+                          <td>1</td>
+                        <td>02 Dec 2022, 01:01</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</div>
+
+<div id="report-lead" class="container-fluid>
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+      <h2>Steps Statistics</h2>
+              <p>The following graph shows step statistics for this build. Below list is based on results.
+ step does not provide information about result then is not listed below.
+ Additionally @Before and @After are not counted because they are part of the scenarios, not steps.</p>
+          </div>
+  </div>
+</div>
+
+<div class="container-fluid" id="summary">
+  <div class="row">
+    <div class="col-md-10 col-md-offset-1">
+              <table id="tablesorter" class="stats-table table-hover">
+
+          <thead>
+            <tr class="header">
+              <th>Implementation</th>
+              <th>Occurrences</th>
+              <th>Duration</th>
+              <th>Average</th>
+              <th>Ratio</th>
+            </tr>
+          </thead>
+
+          <tbody>
+                          <tr>
+                <td class="location">InternetBanking.transfer_from_Every_day_Account_to_Bill_Account()</td>
+                <td>1</td>
+                <td class="duration" data-value="17494975800">17s 494ms</td>
+                <td class="duration" data-value="17494975800">17s 494ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.transfer_successful_message_is_displayed()</td>
+                <td>1</td>
+                <td class="duration" data-value="2061578700">2s 061ms</td>
+                <td class="duration" data-value="2061578700">2s 061ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_click_add_button()</td>
+                <td>3</td>
+                <td class="duration" data-value="15352439100">15s 352ms</td>
+                <td class="duration" data-value="5117479700">5s 117ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_click_add_payee_button()</td>
+                <td>4</td>
+                <td class="duration" data-value="20509952800">20s 509ms</td>
+                <td class="duration" data-value="5127488200">5s 127ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_click_menu_button()</td>
+                <td>5</td>
+                <td class="duration" data-value="25941431100">25s 941ms</td>
+                <td class="duration" data-value="5188286220">5s 188ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_click_name_header()</td>
+                <td>1</td>
+                <td class="duration" data-value="2125548900">2s 125ms</td>
+                <td class="duration" data-value="2125548900">2s 125ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_click_pay_and_transfer_button()</td>
+                <td>1</td>
+                <td class="duration" data-value="2345901100">2s 345ms</td>
+                <td class="duration" data-value="2345901100">2s 345ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_click_payees()</td>
+                <td>4</td>
+                <td class="duration" data-value="20732824300">20s 732ms</td>
+                <td class="duration" data-value="5183206075">5s 183ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_gets_and_error_message()</td>
+                <td>1</td>
+                <td class="duration" data-value="5085168300">5s 085ms</td>
+                <td class="duration" data-value="5085168300">5s 085ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_input_payees_details()</td>
+                <td>3</td>
+                <td class="duration" data-value="70512661400">1m 10s 512ms</td>
+                <td class="duration" data-value="23504220466">23s 504ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_launch_chrome_browser()</td>
+                <td>5</td>
+                <td class="duration" data-value="32208334300">32s 208ms</td>
+                <td class="duration" data-value="6441666860">6s 441ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_open_Internet_Banking_home_page()</td>
+                <td>5</td>
+                <td class="duration" data-value="114251784000">1m 54s 251ms</td>
+                <td class="duration" data-value="22850356800">22s 850ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_verifies_that_Payees_page_is_loaded()</td>
+                <td>4</td>
+                <td class="duration" data-value="20328792100">20s 328ms</td>
+                <td class="duration" data-value="5082198025">5s 082ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_verifies_that_new_payee_has_been_added_in_the_list_of_payee()</td>
+                <td>2</td>
+                <td class="duration" data-value="10187771000">10s 187ms</td>
+                <td class="duration" data-value="5093885500">5s 093ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_verifies_that_new_payee_has_been_added_in_the_list_of_payee_and_the_list_is_sorted_in_ascending_order_by_default()</td>
+                <td>1</td>
+                <td class="duration" data-value="12512723600">12s 512ms</td>
+                <td class="duration" data-value="12512723600">12s 512ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_verifies_that_the_current_balance_of_Everyday_account_and_Bill_counts_are_correct()</td>
+                <td>1</td>
+                <td class="duration" data-value="9145392300">9s 145ms</td>
+                <td class="duration" data-value="9145392300">9s 145ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                          <tr>
+                <td class="location">InternetBanking.user_verifies_that_the_list_is_sorted_in_descending_order()</td>
+                <td>1</td>
+                <td class="duration" data-value="12488296800">12s 488ms</td>
+                <td class="duration" data-value="12488296800">12s 488ms</td>
+                <td class="passed">100.00%</td>
+              </tr>
+                      </tbody>
+
+          <tfoot class="total">
+            <tr>
+              <td>17</td>
+              <td>43</td>
+              <td class="duration">6m 33s 285ms</td>
+              <td class="duration">9s 146ms</td>
+              <td>Totals</td>
+            </tr>
+          </tfoot>
+
+        </table>
+          </div>
+  </div>
+</div>
+
+
+<nav class="navbar navbar-default" id="footer">
+  <div class="container-fluid">
+    <p class="navbar-text navbar-right">
+        <small>generate Cucumber HTML reports via:&nbsp;</small>
+        <a class="navbar-link" href="https://github.com/jenkinsci/cucumber-reports-plugin">Jenkins Plugin</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-reporting">Standalone</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/cucumber-sandwich">Sandwich</a> |
+        <a class="navbar-link" href="https://github.com/damianszczepanik/maven-cucumber-reporting">Maven</a>
+        &nbsp;&nbsp;
+    </p>
+  </div>
+</nav>
+
+</body>
+</html>

@@ -1,0 +1,609 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-12-01T16:52:17.195Z",
+        "line": 4,
+        "name": "Verify you can navigate to Payees page using the navigation menu",
+        "description": "",
+        "id": "internet-banking-pages;verify-you-can-navigate-to-payees-page-using-the-navigation-menu",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 7895125900,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "InternetBanking.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23900205200,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user open Internet Banking home page",
+            "match": {
+              "location": "InternetBanking.user_open_Internet_Banking_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5216251100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user click menu button",
+            "match": {
+              "location": "InternetBanking.user_click_menu_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5182142400,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user click payees",
+            "match": {
+              "location": "InternetBanking.user_click_payees()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5086302000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user verifies that Payees page is loaded",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_Payees_page_is_loaded()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PayeePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-01T16:53:04.580Z",
+        "line": 12,
+        "name": "User Verifies if new payee has been added in the Payees page",
+        "description": "",
+        "id": "internet-banking-pages;user-verifies-if-new-payee-has-been-added-in-the-payees-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 5989046800,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "InternetBanking.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22089340400,
+              "status": "passed"
+            },
+            "line": 14,
+            "name": "user open Internet Banking home page",
+            "match": {
+              "location": "InternetBanking.user_open_Internet_Banking_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5185854200,
+              "status": "passed"
+            },
+            "line": 15,
+            "name": "user click menu button",
+            "match": {
+              "location": "InternetBanking.user_click_menu_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5204647000,
+              "status": "passed"
+            },
+            "line": 16,
+            "name": "user click payees",
+            "match": {
+              "location": "InternetBanking.user_click_payees()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5076935600,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "user verifies that Payees page is loaded",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_Payees_page_is_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5118445700,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "user click add button",
+            "match": {
+              "location": "InternetBanking.user_click_add_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23491266400,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "user input payees details",
+            "match": {
+              "location": "InternetBanking.user_input_payees_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5151669900,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "user click add payee button",
+            "match": {
+              "location": "InternetBanking.user_click_add_payee_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5093386800,
+              "status": "passed"
+            },
+            "line": 21,
+            "name": "user verifies that new payee has been added in the list of payee",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_new_payee_has_been_added_in_the_list_of_payee()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PayeePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-01T16:54:27.004Z",
+        "line": 24,
+        "name": "User verifies that payee name is a required field",
+        "description": "",
+        "id": "internet-banking-pages;user-verifies-that-payee-name-is-a-required-field",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6169323300,
+              "status": "passed"
+            },
+            "line": 25,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "InternetBanking.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22131481300,
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user open Internet Banking home page",
+            "match": {
+              "location": "InternetBanking.user_open_Internet_Banking_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5188655200,
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user click menu button",
+            "match": {
+              "location": "InternetBanking.user_click_menu_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5176520000,
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user click payees",
+            "match": {
+              "location": "InternetBanking.user_click_payees()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5089028000,
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user verifies that Payees page is loaded",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_Payees_page_is_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5120467200,
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user click add button",
+            "match": {
+              "location": "InternetBanking.user_click_add_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5113221000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user click add payee button",
+            "match": {
+              "location": "InternetBanking.user_click_add_payee_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5085168300,
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user gets and error message",
+            "match": {
+              "location": "InternetBanking.user_gets_and_error_message()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23488561600,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user input payees details",
+            "match": {
+              "location": "InternetBanking.user_input_payees_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5118321900,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user click add payee button",
+            "match": {
+              "location": "InternetBanking.user_click_add_payee_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5094384200,
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user verifies that new payee has been added in the list of payee",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_new_payee_has_been_added_in_the_list_of_payee()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PayeePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-01T16:55:59.786Z",
+        "line": 38,
+        "name": "User Verifies if new payee has been added in the Payees page",
+        "description": "",
+        "id": "internet-banking-pages;user-verifies-if-new-payee-has-been-added-in-the-payees-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6080426900,
+              "status": "passed"
+            },
+            "line": 39,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "InternetBanking.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 23772921800,
+              "status": "passed"
+            },
+            "line": 40,
+            "name": "user open Internet Banking home page",
+            "match": {
+              "location": "InternetBanking.user_open_Internet_Banking_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5169432900,
+              "status": "passed"
+            },
+            "line": 41,
+            "name": "user click menu button",
+            "match": {
+              "location": "InternetBanking.user_click_menu_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5169514900,
+              "status": "passed"
+            },
+            "line": 42,
+            "name": "user click payees",
+            "match": {
+              "location": "InternetBanking.user_click_payees()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5076526500,
+              "status": "passed"
+            },
+            "line": 43,
+            "name": "user verifies that Payees page is loaded",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_Payees_page_is_loaded()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5113526200,
+              "status": "passed"
+            },
+            "line": 44,
+            "name": "user click add button",
+            "match": {
+              "location": "InternetBanking.user_click_add_button()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 23532833400,
+              "status": "passed"
+            },
+            "line": 45,
+            "name": "user input payees details",
+            "match": {
+              "location": "InternetBanking.user_input_payees_details()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 5126740000,
+              "status": "passed"
+            },
+            "line": 46,
+            "name": "user click add payee button",
+            "match": {
+              "location": "InternetBanking.user_click_add_payee_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12512723600,
+              "status": "passed"
+            },
+            "line": 47,
+            "name": "user verifies that new payee has been added in the list of payee and the list is sorted in ascending order by default",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_new_payee_has_been_added_in_the_list_of_payee_and_the_list_is_sorted_in_ascending_order_by_default()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2125548900,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user click name header",
+            "match": {
+              "location": "InternetBanking.user_click_name_header()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 12488296800,
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user verifies that the list is sorted in descending order",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_the_list_is_sorted_in_descending_order()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PayeePage"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2022-12-01T16:57:45.963Z",
+        "line": 52,
+        "name": "User Navigates to Payment Page",
+        "description": "",
+        "id": "internet-banking-pages;user-navigates-to-payment-page",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 6074411400,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user launch chrome browser",
+            "match": {
+              "location": "InternetBanking.user_launch_chrome_browser()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 22357835300,
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user open Internet Banking home page",
+            "match": {
+              "location": "InternetBanking.user_open_Internet_Banking_home_page()"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 5181237700,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user click menu button",
+            "match": {
+              "location": "InternetBanking.user_click_menu_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2345901100,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user click pay and transfer button",
+            "match": {
+              "location": "InternetBanking.user_click_pay_and_transfer_button()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 17494975800,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "transfer from Every day Account to Bill Account",
+            "match": {
+              "location": "InternetBanking.transfer_from_Every_day_Account_to_Bill_Account()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 2061578700,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "transfer successful message is displayed",
+            "match": {
+              "location": "InternetBanking.transfer_successful_message_is_displayed()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 9145392300,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user verifies that the current balance of Everyday account and Bill counts are correct",
+            "match": {
+              "location": "InternetBanking.user_verifies_that_the_current_balance_of_Everyday_account_and_Bill_counts_are_correct()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@PaymentPage"
+          }
+        ]
+      }
+    ],
+    "name": "Internet Banking Pages",
+    "description": "",
+    "id": "internet-banking-pages",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/InternetBanking.feature",
+    "tags": []
+  }
+]

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="5" time="393.359929">
+    <testcase classname="Internet Banking Pages" name="Verify you can navigate to Payees page using the navigation menu" time="47.334625">
+        <system-out>
+            <![CDATA[Given user launch chrome browser............................................passed
+When user open Internet Banking home page...................................passed
+And user click menu button..................................................passed
+And user click payees.......................................................passed
+Then user verifies that Payees page is loaded...............................passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Internet Banking Pages" name="User Verifies if new payee has been added in the Payees page" time="82.405461">
+        <system-out>
+            <![CDATA[Given user launch chrome browser............................................passed
+When user open Internet Banking home page...................................passed
+And user click menu button..................................................passed
+And user click payees.......................................................passed
+Then user verifies that Payees page is loaded...............................passed
+When user click add button..................................................passed
+And user input payees details...............................................passed
+And user click add payee button.............................................passed
+Then user verifies that new payee has been added in the list of payee.......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Internet Banking Pages" name="User verifies that payee name is a required field" time="92.780968">
+        <system-out>
+            <![CDATA[Given user launch chrome browser............................................passed
+When user open Internet Banking home page...................................passed
+And user click menu button..................................................passed
+And user click payees.......................................................passed
+Then user verifies that Payees page is loaded...............................passed
+When user click add button..................................................passed
+And user click add payee button.............................................passed
+Then user gets and error message............................................passed
+And user input payees details...............................................passed
+And user click add payee button.............................................passed
+Then user verifies that new payee has been added in the list of payee.......passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Internet Banking Pages" name="User Verifies if new payee has been added in the Payees page" time="106.173817">
+        <system-out>
+            <![CDATA[Given user launch chrome browser............................................passed
+When user open Internet Banking home page...................................passed
+And user click menu button..................................................passed
+And user click payees.......................................................passed
+Then user verifies that Payees page is loaded...............................passed
+When user click add button..................................................passed
+And user input payees details...............................................passed
+And user click add payee button.............................................passed
+Then user verifies that new payee has been added in the list of payee and the list is sorted in ascending order by default.passed
+And user click name header..................................................passed
+Then user verifies that the list is sorted in descending order..............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="Internet Banking Pages" name="User Navigates to Payment Page" time="64.665058">
+        <system-out>
+            <![CDATA[Given user launch chrome browser............................................passed
+When user open Internet Banking home page...................................passed
+And user click menu button..................................................passed
+And user click pay and transfer button......................................passed
+And transfer from Every day Account to Bill Account.........................passed
+Then transfer successful message is displayed...............................passed
+Then user verifies that the current balance of Everyday account and Bill counts are correct.passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>
